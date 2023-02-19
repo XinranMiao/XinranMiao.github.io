@@ -1,0 +1,56 @@
+.updatebox dt {
+  
+  padding-bottom: 10px;
+  
+}
+
+.updatebox dt code {
+  
+  background: #f3f3f3;
+  
+}
+
+.updatebox dd code {
+  
+  background: #f3f3f3;
+  
+}
+
+/* Take a look at this, consider incorporating some of it down the road maybe. */
+/* https://kazemnejad.github.io/jekyll-course-website-template/ */
+.announcement-box {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #fded94; /* fcf8e3 */
+    border-color: #eacc8b; /* faebcc */
+    font-size: 90%; 
+}
+
+.announcement-box code {
+  
+  background-color: #fded94; /* ffed88 */
+  font-size: 100%;
+  padding: 2px 2px; 
+  border-bottom: 0px;
+  
+}
+
+.announcement-box a {
+  
+  color: #000; 
+  text-decoration: none; border-bottom:1px dotted; 
+  
+}
+
+#focusbox {
+      padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: $su-sky34; /* fcf8e3 */
+    border-color: $su-sky; /* faebcc */
+    font-size: 90%; 
+  
+}

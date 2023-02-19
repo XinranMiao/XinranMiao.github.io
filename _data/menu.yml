@@ -1,0 +1,19 @@
+#- title: "About"
+#  href: "/about/"
+#  active: about
+
+
+
+- title: "Research"
+  href: "/research/"
+  active: research
+
+#- title: "Teaching"
+#  href: "/teaching/"
+ # active: teaching
+
+
+
+#- title: "Blog"
+ # href: "/blog/"
+ # active: blog
