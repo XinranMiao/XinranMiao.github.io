@@ -4,7 +4,7 @@ email: xmiao27@wisc.edu
 description: > # this means to ignore newlines until "baseurl:"
   I'm a second-year PhD student in Statistics at University of Wisconsin-Madison.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: https://XinranMiao.github.io # the base hostname & protocol for your site
+url: https://xinranmiao.github.io # the base hostname & protocol for your site
 linkedin_username: xinran-miao-56271b231
 github_username:  XinranMiao
 # orcid_id: 
