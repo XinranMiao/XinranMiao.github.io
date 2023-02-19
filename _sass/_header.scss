@@ -2,10 +2,10 @@
  * Site header
  */
 .site-header {
-    border-top: 0px solid $grey-color-dark;
-	border-bottom: 4px solid $su-water;
+    border-top: 0px solid $medium-green;
+	border-bottom: 4px solid $medium-green;
     min-height: 56px;
-    background: $su-blue;
+    background: $light-green;
     // Positioning context for the mobile navigation icon
     position: relative;
 
@@ -19,11 +19,11 @@
     margin-bottom: 0;
     float: left;
     font-weight: 500;
-		font-family: 'Titillium Web', sans-serif;
-    color: #ffffff;
+		font-family: 'Raleway', sans-serif;
+    color: $dark-green;
     &,
     &:visited {
-        color: #ffffff;
+        color:$deep-green;
     }
     &,
     &:hover {
@@ -37,12 +37,12 @@
 }
 
 .site-nav ul li a {
-	color: #fff;
+	color:$deep-green;
 }
 
 .site-nav ul li a:hover {
   text-decoration: none;
-	color: $su-water;
+	color: $dark-pink;
 }
 
 .site-nav ul {
@@ -58,7 +58,7 @@
 	padding: 0;
 	list-style-type: none;
 	text-transform: uppercase;
-		font-family: 'Titillium Web', sans-serif;
+		font-family: 'Raleway', sans-serif;
 
 }
 
@@ -75,11 +75,11 @@
 
 .site-nav a {
 	display: block;
-        color: #ffffff;
+        color: $light-purple;
 }
 
 .site-nav ul li#n-active {
-  border-color: $su-water;
+  border-color: $medium-purple;
 }
 
 /* Sub Menu */
@@ -91,17 +91,17 @@
 	letter-spacing: 0;
 	line-height: 1.2em;
 	padding: 4px 10px;
-color: $su-blue;
+color: $dark-purple;
 
 }
 
 .site-nav .sub-menu a:hover {
-	color: $su-blue;
-	background: $su-water;
+	color: $medium-purple;
+	background: $lightcontrast-purple;
 }
 .site-nav  .sub-menu {
 	background: #ffffff;
-	border-color: $su-blue;
+	border-color: $dark-purple;
 	min-width: 265px;
 
 	z-index:2147483647;
@@ -166,7 +166,7 @@ z-index:999;
     }
 
     .page-link {
-        color: #ffffff;
+        color: $bg-purple;
     /* background: $clemson-orange; */
         line-height: $base-line-height;
 

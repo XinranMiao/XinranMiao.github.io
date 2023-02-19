@@ -108,13 +108,13 @@
 }
 
 .footer-col-2 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+    width:         calc(25% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
-    width: -webkit-calc(25% - (#{$spacing-unit} / 2));
-    width:         calc(25% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
@@ -183,8 +183,9 @@ h1 /* .post-title */ {
 /*    font-size: 42px; */
     letter-spacing: -1px;
     line-height: 1;
-		font-family: 'Titillium Web', sans-serif;
-		color: $su-blue;
+		font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+		color: $deep-green;
 
     @include media-query($on-laptop) {
 /*        font-size: 36px; */
@@ -195,7 +196,7 @@ h1 /* .post-title */ {
     margin-bottom: $spacing-unit;
 
     h2 {
-		font-family: 'Titillium Web', sans-serif;
+		font-family: 'Raleway', sans-serif;
 	font-weight: 500;
 /*        font-size: 32px; */
 
@@ -237,7 +238,7 @@ ul.listing {
 ul.listing li.listing-seperator {
 	padding-top: 15px;
 	font-weight: bold;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 1.17em;
 }
 
@@ -250,7 +251,7 @@ ul.listing li.listing-item time {
 }
 
 ul.listing li.listing-item a {
-	color: $su-blue;
+	color: $dark-purple;
 	font-weight: 400;
 	font-family: 'Titillium Web', sans-serif;
 }
@@ -291,7 +292,7 @@ ul#archive li.alt {
 }
 
 ul#archive li span a {
-       color: $su-blue;
+       color: $dark-purple;
 	font-weight: bold;
 font-family: 'Titillium Web', sans-serif;
 }
@@ -303,7 +304,7 @@ ul#archive li span.postlower {
 }
 
 ul#archive li span.postlower a {
-	color: #07c;
+	color: $medium-purple;
 	font-weight: normal;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 

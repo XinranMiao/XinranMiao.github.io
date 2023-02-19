@@ -6,7 +6,7 @@
 
 
 // Our variables
-$base-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+$base-font-family: 'Lato', Helvetica, Arial, sans-serif;
 $base-font-size:   .95em;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -31,6 +31,39 @@ $su-fire10: #fdf0e8;
 $su-darkgrey: #4c4c4c;
 $su-lightgrey: #dadada;
 $su-mediumgrey: #bababa;
+
+// green 
+$deep-green: #22577A;
+$dark-green: #48A3A5;
+$bright-green: #80ED99;
+$medium-green: #57CC99;
+$light-green:#C7F9CC;
+$bg-green:#d2e7d4;
+
+// bluegreen
+$dark-bluegreen: #006D77;
+$light-bluegreen: #83C5BE;
+$bg-bluegreen: #EDF6F9;
+$lightcontrast-bluegreen: #FFDDD2;
+$darkcontrast_bluegreen: #E29578;
+
+// purple
+$dark-purple: #736CED;
+$medium-purple: #9F9FED;
+$light-purple: #D4C1EC;
+$lightbg-purple: #F2DFD7;
+$bg-purple: #FEF9FF;
+$lightcontrast-purple: #EAF2D7;
+$hyperlink-purple: #5E7CE2;
+
+//pink
+$deep-pink: #450920;
+$mediumdark-pink: #772845;
+$dark-pink: #A53860;
+$bright-pink: #e14c6c;
+$medium-pink: #FFA5AB;
+$light-pink: #F9DBBD;
+
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -68,6 +101,5 @@ $on-laptop:        950px;
         "layout",
         "syntax-highlighting",
 	"fancy-image",
-	"table",
 	"updatebox"
 ;

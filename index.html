@@ -4,19 +4,67 @@ layout: default
 
 
 
-<div class="home">
-	<h1>This site is still under construction!</h1>
-<h1>Background</h1>
-	
-	<p>I'm a second-year PhD student in Statistics at <a href="https://www.wisc.edu">University of Wisconsin Madison</a>.</p>
 
 
-	<p><a href="/docs/xinranmiao_cv.pdf">[CV]</a>.</p>
+<head>
+    <style>
+    {
+        box-sizing: border-box;
+    }
+    /* Set additional styling options for the columns*/
+    .column {
+    float: left;
+    }
+    
+	.left {
+    width: 50%;
+    }
+	.middle {
+    width: 15%;
+    }
+    .right {
+    width: 35%;
+    }
 
-{% include image.html url="/images/xinranmiao.jpg" caption="December 2021 at UW-Madison (photo taken by Yuchen Zeng)." width=300 align="right" %}
-
-<h1>Education</h1>
-     <p> PhD in Statistics, University of Wisconsin-Madison, USA, (expected) May 2026</p>
-     <p> MS in Statistics, University of Wisconsin-Madison, USA, May 2021</p>
-	 <p> BS in Statistics, Nankai University, China, June 2020</p>
-</div>
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>
+ </head>
+ <body>
+    <div class="row">
+        <div class="column left">
+            <h1>This site is still under construction!</h1>
+            <h1>Background</h1>
+	             <p>I'm a second-year PhD student in Statistics at <a href="https://www.wisc.edu">University of Wisconsin Madison</a>.</p>
+			 <h1>Education</h1>
+			     <p> PhD in Statistics, University of Wisconsin-Madison, USA, (expected) May 2026</p>
+			     <p> MS in Statistics, University of Wisconsin-Madison, USA, May 2021</p>
+			     <p> BS in Statistics, Nankai University, China, June 2020</p>
+		    <h1>Teaching Experience</h1>
+		        <p>Teaching Assistant at UW-Madison</p>
+		            <ul>
+			        <li>STAT301: Introduction to Statistics. Fall 2021, Spring 2022</li>
+		            </ul>
+				<p><a href="/docs/xinranmiao_cv.pdf">[CV]</a>.</p>
+        </div>
+		<div class="column middle">
+			<p></p>
+		</div>
+        <div class="column right">
+            {% include image.html url="/images/xinranmiao.jpg" caption="February 14, 2022 at UW-Madison." width=1000 align="center" %}
+			<ul class="contact-list">
+				<li><strong>{{ site.title }}</strong></li>
+				<li>Department of Statistics</li>
+				<li>UW-Madison</li>
+				<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+				<li><a href="https://github.com/{{ site.github_username }}">
+					<i class="fa fa-github" style="color:gray"></i> Github</li>
+				<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+					<i class="fa fa-linkedin" style="color:gray"></i> Linkedin</a></li>
+			  </ul>
+        </div>
+    </div>
+ </body>
