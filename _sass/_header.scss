@@ -2,10 +2,10 @@
  * Site header
  */
 .site-header {
-    border-top: 0px solid $medium-green;
-	border-bottom: 4px solid $medium-green;
+    border-top: 0px solid $dark-purple;
+	border-bottom: 2px solid #F0E6EF;
     min-height: 56px;
-    background: $light-green;
+    background: $bg-purple;
     // Positioning context for the mobile navigation icon
     position: relative;
 
@@ -20,10 +20,10 @@
     float: left;
     font-weight: 500;
 		font-family: 'Raleway', sans-serif;
-    color: $dark-green;
+    color: $deep-purple;
     &,
     &:visited {
-        color:$deep-green;
+        color:$deep-purple;
     }
     &,
     &:hover {
@@ -37,12 +37,12 @@
 }
 
 .site-nav ul li a {
-	color:$deep-green;
+	color:$deep-purple
 }
 
 .site-nav ul li a:hover {
   text-decoration: none;
-	color: $dark-green;
+	color: $hyperlink-purple;
 }
 
 .site-nav ul {
