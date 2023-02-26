@@ -1,5 +1,5 @@
 ---
-title: Get started with rstan
+title: A Toy Example of Using Rstan
 author: Xinran Miao
 layout: post
 active: blog
