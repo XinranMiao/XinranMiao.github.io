@@ -3,6 +3,7 @@ title: Get started with rstan
 author: Xinran Miao
 layout: post
 active: blog
+permalink: /blog/20230226stan/
 ---
 
 This post prepares a toy example for estimating probalistic models using Rstan.
