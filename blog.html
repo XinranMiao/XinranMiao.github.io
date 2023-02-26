@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{% for page in site.posts %}
+<p>
+    <h2>{{ post.title }}</h2>
+    <strong><a href="{{ page.url | prepend: site.url }}">{{ page.title }}</a></strong>
+    <span>on {{ page.date | date: "%B %e, %Y" }} {% if page.author %} by {{ page.author }}{% endif %}</span>
+</p>
+{% endfor %}
