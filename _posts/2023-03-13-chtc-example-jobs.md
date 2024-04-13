@@ -142,7 +142,7 @@ Rscript run.R $2 $3
 The CHTC supports using pulling docker images; see their [documentation](https://chtc.cs.wisc.edu/uw-research-computing/docker-jobs.html). In fact, all the examples above used a toy docker image I made from [this dockerfile](https://github.com/XinranMiao/docker_chtc_example/blob/main/R_example/Dockerfile). You may find some toy examples for R and python from [my earlier repo](https://github.com/XinranMiao/docker_chtc_example).
 
 ### Installing Packages
-Their are official tutorials on running [R](https://chtc.cs.wisc.edu/uw-research-computing/r-jobs.html), [Julia](https://chtc.cs.wisc.edu/uw-research-computing/julia-jobs.html), [Python](https://chtc.cs.wisc.edu/uw-research-computing/python-jobs.html), and others on CHTC.
+There are official tutorials on running [R](https://chtc.cs.wisc.edu/uw-research-computing/r-jobs.html), [Julia](https://chtc.cs.wisc.edu/uw-research-computing/julia-jobs.html), [Python](https://chtc.cs.wisc.edu/uw-research-computing/python-jobs.html), and others on CHTC.
 
 ## IV. Resources
 
