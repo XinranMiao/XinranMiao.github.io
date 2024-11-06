@@ -18,7 +18,8 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
-    color: $text-color;
+    //color: $text-color;
+    color: black;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
@@ -90,7 +91,8 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $hyperlink-purple;
+    //color: $hyperlink-purple;
+    color: #C94C4C;
     text-decoration: none;
 
    &:visited {
@@ -98,7 +100,8 @@ a {
     } 
 
     &:hover {
-        color: $dark-purple;
+        //color: $dark-purple;
+        color: #C94C4C;
         text-decoration: underline;
     }
 }

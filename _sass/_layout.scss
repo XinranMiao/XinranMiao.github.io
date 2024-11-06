@@ -186,6 +186,7 @@ h1 /* .post-title */ {
 		font-family: 'Raleway', sans-serif;
         font-size: 32px;
 		color: $deep-purple;
+        //color: black;
 
     @include media-query($on-laptop) {
 /*        font-size: 36px; */
@@ -195,8 +196,10 @@ h1 /* .post-title */ {
 h2 {
     font-family: 'Raleway', sans-serif;
 font-weight: 500;
-color: $deep-purple;
-        font-size: 26px; 
+//color: $deep-purple;
+color: black;
+        //font-size: 26px; 
+font-size: 22px; 
 
     @include media-query($on-laptop) {
 /*            font-size: 28px; */
@@ -205,9 +208,11 @@ color: $deep-purple;
 
 h3 {
     font-family: 'Raleway', sans-serif;
-color: $deep-purple;
+//color: $deep-purple;
+color: black;
 font-weight: 500;
-        font-size: 22px; 
+        //font-size: 22px; 
+        font-size: 18px; 
 
     @include media-query($on-laptop) {
 /*            font-size: 28px; */
@@ -217,8 +222,10 @@ h4 {
     font-family: 'Raleway', sans-serif;
 font-weight: 500;
 font-weight: bold;
-color: $deep-purple;
-        font-size: 18px; 
+// color: $deep-purple;
+color: black;
+        //font-size: 18px; 
+        font-size: 14px; 
 
     @include media-query($on-laptop) {
 /*            font-size: 28px; */
@@ -258,7 +265,8 @@ ul.listing li.listing-item time {
 }
 
 ul.listing li.listing-item a {
-	color: $dark-purple;
+	//color: $dark-purple;
+    color: black;
 	font-weight: 400;
 	font-family: 'Titillium Web', sans-serif;
 }
@@ -299,7 +307,8 @@ ul#archive li.alt {
 }
 
 ul#archive li span a {
-       color: $dark-purple;
+       //color: $dark-purple;
+       color: black;
 	font-weight: bold;
 font-family: 'Titillium Web', sans-serif;
 }
@@ -311,7 +320,8 @@ ul#archive li span.postlower {
 }
 
 ul#archive li span.postlower a {
-	color: $medium-purple;
+	//color: $medium-purple;
+    color: black;
 	font-weight: normal;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 

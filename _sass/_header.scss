@@ -3,9 +3,12 @@
  */
 .site-header {
     border-top: 0px solid $dark-purple;
-	border-bottom: 1px solid #B8B8FF;
+    //border-top: 0px solid black;
+	//border-bottom: 1px solid #B8B8FF;
+    border-bottom: 1px solid whitesmoke;
     min-height: 56px;
-    background: $bg-purple;
+    background: whitesmoke;
+    //background: $bg-purple;
     // Positioning context for the mobile navigation icon
     position: relative;
 
@@ -20,10 +23,12 @@
     float: left;
     font-weight: 500;
 		font-family: 'Raleway', sans-serif;
-    color: $deep-purple;
+    //color: $deep-purple;
+    color: black;
     &,
     &:visited {
-        color:$deep-purple;
+        //color:$deep-purple;
+        color:black;
     }
     &,
     &:hover {
@@ -37,12 +42,14 @@
 }
 
 .site-nav ul li a {
-	color:$deep-purple
+	//color:$deep-purple
+    color:black
 }
 
 .site-nav ul li a:hover {
   text-decoration: none;
-	color: $hyperlink-purple;
+	//color: $hyperlink-purple;
+    color: #C94C4C;
 }
 
 .site-nav ul {
@@ -79,7 +86,8 @@
 }
 
 .site-nav ul li#n-active {
-  border-color: $medium-purple;
+  //border-color: $medium-purple;
+  border-color: gray;
 }
 
 /* Sub Menu */
@@ -91,7 +99,8 @@
 	letter-spacing: 0;
 	line-height: 1.2em;
 	padding: 4px 10px;
-color: $dark-purple;
+//color: $dark-purple;
+color: black;
 
 }
 
