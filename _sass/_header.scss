@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-    border-top: 0px solid $dark-purple;
+    border-top: 0px solid #C94C4C;
     //border-top: 0px solid black;
 	//border-bottom: 1px solid #B8B8FF;
     border-bottom: 1px solid whitesmoke;
@@ -110,7 +110,7 @@ color: black;
 }
 .site-nav  .sub-menu {
 	background: #ffffff;
-	border-color: $dark-purple;
+	border-color: #C94C4C;
 	min-width: 265px;
 
 	z-index:2147483647;
