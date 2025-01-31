@@ -1,1 +1,1 @@
-Xinran Miao
+This is the personal website for Xinran Miao.
