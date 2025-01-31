@@ -1,14 +1,13 @@
 # Site settings
-title: Xinran Miao
+title: Xinran Miao 苗欣然
 email: xinran.miao@wisc.edu
-description: > # this means to ignore newlines until "baseurl:"
-  I'm a third-year PhD student in Statistics at University of Wisconsin-Madison.
+description: > # this means to ignore newlines until "baseurl:" I'm a third-year PhD student in Statistics at University of Wisconsin-Madison.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://xinranmiao.github.io # the base hostname & protocol for your site
 linkedin_username: xinran-miao-56271b231
 github_username:  XinranMiao
 # orcid_id: 
-# google_scholar_id:
+google_scholar_id: 5vHFhx8AAAAJ
 
 # Build settings
 markdown: kramdown
