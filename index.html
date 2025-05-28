@@ -28,6 +28,31 @@ layout: default
     display: table;
     clear: both;
     }
+/* News ==================== */
+    .news-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  height: 150px;
+  overflow-y: auto; /* Manual scroll */
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.news-list {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 2px;
+}
+
+.news-list li {
+  margin-bottom: 12px;
+}
+
+.news-date {
+  font-weight: bold;
+  margin-right: 8px;
+}
     </style>
  </head>
  <body>
@@ -45,7 +70,18 @@ layout: default
             <!---
                 <p><a href="https://scholar.google.com/citations?user=5vHFhx8AAAAJ&hl=en">[Google Scholar]</a></p>
                 -->
-        
+        <h2>News</h2>
+<div class="news-container">
+  <ul class="news-list">
+    <li><span class="news-date">June 2025:</span>I will be presenting our work <a href="https://www.arxiv.org/abs/2411.01100">"Transfer Learning Between U.S. Presidential Elections"</a> at NESS.</li>
+    <li><span class="news-date">May 2025:</span>I passed the preliminary exam and become a PhD candidate. Many thanks to my advisor Prof. Hyunseung Kang, as well as Prof. Guanhua Chen, Prof. Melody Huang, Prof. Edward Kennedy and Prof. Qingyuan Zhao who kindly served in my committe and provided valuable feedback!</li>
+    <li><span class="news-date">May 2025:</span>I presented our ongoing work <a href="/docs/20250516_SLOPE_ACIC.pdf">"SLOPE And Its Role In Design For Generalization"</a> at ACIC.</li>
+    <li><span class="news-date">April 2025:</span>I'm honored to receive Summer Research Fellowship from our department and IMS Hannan Graduate Student Travel Award from Institute of Machematical Statistics (IMS). </li>
+    <li><span class="news-date">February 2025:</span>I presented our work <a href="https://www.arxiv.org/abs/2411.01100">"Transfer Learning Between U.S. Presidential Elections"</a> at <a href="https://sites.google.com/view/meadwisc/home">MEAD</a>.</li>
+    <li><span class="news-date">January 2025:</span>Our work <a href="https://www.arxiv.org/abs/2411.01100">"Transfer Learning Between U.S. Presidential Elections"</a> received ASA Student Paper Award from the SLDS session. I will present this work at JSM 2025.</li>
+    <li><span class="news-date">June 2024:</span>I'm honored to receive the teaching award from our department. [<a href="https://stat.wisc.edu/2024/06/18/department-of-statistics-honors-outstanding-teaching-assistants-for-2023-2024/">Department News</a>]</li>
+  </ul>
+</div>
 			 <h2>Education</h2>
                  <p> Ph.D. in Statistics, University of Wisconsin-Madison, (Expected) 2026</p>
 			     <p> M.S. in Statistics, University of Wisconsin-Madison, 2021</p>
@@ -67,7 +103,7 @@ layout: default
                         <li>SCI Travel Scholarship, awarded by Socienty for Causal Inference (SCI), 2024</li>                    </ul>	
             <h2>Contact</h2>
             <p>Email: xinran (dot) miao (at) wisc (dot) edu</p>
-            <p>Office: 13350 Medical Sciences Center, Madison, WI, 53706</p>
+            <p>Office: 1335O Medical Sciences Center, Madison, WI, 53706</p>
         </div>
 		<div class="column middle">
 			<p></p>
