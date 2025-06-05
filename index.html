@@ -8,6 +8,14 @@ layout: default
     {
         box-sizing: border-box;
     }
+
+    h2 {
+    font-weight: 700;
+    font-size: 1.6em;
+    letter-spacing: 0.5px;
+    
+    }
+
     /* Set additional styling options for the columns*/
     .column {
     float: left;
@@ -30,30 +38,127 @@ layout: default
     }
 /* News ==================== */
     .news-container {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  height: 150px;
-  overflow-y: auto; /* Manual scroll */
-  background-color: #f9f9f9;
+     border: 1px solid #ccc;
+     border-radius: 8px;
+    padding: 10px;
+    height: 160px;
+    overflow-y: auto; /* Manual scroll */
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    }
+
+    .news-list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 2px;
+    }
+
+    .news-list li {
+    margin-bottom: 12px;
+    }
+
+    .news-date {
+    font-weight: bold;
+    margin-right: 8px;
+    }
+
+    .news-container h2 {
+    margin-bottom: 2px;  /* or 0px for no gap at all */
+    }
+
+    .news-divider {
+    height: 1px;
+    background-color: #ccc;
+    margin: -13px 0 8px 0;
+    }
+
+/* Research */
+    .education-entry {
+    display: grid;
+    grid-template-columns: 500px 1fr; /* first column: school & degree */
+    gap: 20px;
+    margin-bottom: 14px;
+    font-family: sans-serif;
+    }
+
+    .education-info {
+    font-weight: 500;
+    color: #000;
+    }
+
+    .education-year {
+    font-weight: 500;
+    }
+
+
+    /* Teaching list  */
+    .subtitle {
+    font-style: italic;
+  color: #666;
   margin-bottom: 20px;
 }
 
-.news-list {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 2px;
+.teaching-entry {
+  display: grid;
+  grid-template-columns: 500px 1fr; /* course title column is now 300px wide */
+  gap: 20px;
+  margin-bottom: 18px;
+  font-family: sans-serif;
 }
 
-.news-list li {
-  margin-bottom: 12px;
+.course-info {
+  display: flex;
+  flex-direction: column;
 }
 
-.news-date {
-  font-weight: bold;
-  margin-right: 8px;
+.course-title {
+  font-weight: 500;
+  color: #000;
 }
-    </style>
+
+.course-description {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.term {
+  font-weight: 500;
+}
+
+
+/* Award  */
+.award-entry {
+  display: grid;
+  grid-template-columns: 500px 1fr; /* adjust the width as needed */
+  gap: 20px;
+  margin-bottom: 16px;
+  font-family: sans-serif;
+}
+
+.award-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.award-name {
+  font-weight: 500;
+  color: #000;
+}
+
+.award-description {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.award-year {
+  font-weight: 500;
+}
+
+</style>
  </head>
  <body>
     <div class="row">
@@ -62,71 +167,178 @@ layout: default
                  Professor <a href="https://pages.cs.wisc.edu/~hyunseung/">Hyunseung Kang</a>. 
                  Prior to coming to Madison, I received B.S. in Statistics from the <a href="http://en.math.nankai.edu.cn">School of Mathematical Sciences</a> at <a href="https://en.nankai.edu.cn">Nankai University</a> in China.
                 </p>
-                <p>My research interests include transportability/generalizability, sensitivity analysis, causal inference, and robust statistics. </p>
+                <p>My research interests include transportability/generalizability, sensitivity analysis, causal inference, and robust statistics. [<a href = "https://xinranmiao.github.io/research/">Research page</a>] [<a href = "https://scholar.google.com/citations?user=5vHFhx8AAAAJ&hl=en">Google Scholar</a>]</p>
                 
+                <p><b>I will be on the 2025-2026 academic job market for postdoc positions.</b></p>
                 
                <!--- <p><a href="/docs/xinranmiao_cv.pdf">[CV]</a></p>
                 -->
             <!---
                 <p><a href="https://scholar.google.com/citations?user=5vHFhx8AAAAJ&hl=en">[Google Scholar]</a></p>
                 -->
-        <h2>News</h2>
+        <!--- <h2>News</h2> --->
 <div class="news-container">
+    <h3>News</h3>
+    <div class="news-divider"></div>
   <ul class="news-list">
-    <li><span class="news-date">June 2025:</span>I will be presenting our work <a href="https://www.arxiv.org/abs/2411.01100">"Transfer Learning Between U.S. Presidential Elections"</a> at NESS.</li>
-    <li><span class="news-date">May 2025:</span>I passed the preliminary exam and become a PhD candidate. Many thanks to my advisor Prof. Hyunseung Kang, as well as Prof. Guanhua Chen, Prof. Melody Huang, Prof. Edward Kennedy and Prof. Qingyuan Zhao who kindly served in my committe and provided valuable feedback!</li>
-    <li><span class="news-date">May 2025:</span>I presented our ongoing work <a href="/docs/20250516_SLOPE_ACIC.pdf">"SLOPE And Its Role In Design For Generalization"</a> at ACIC.</li>
-    <li><span class="news-date">April 2025:</span>I'm honored to receive Summer Research Fellowship from our department and IMS Hannan Graduate Student Travel Award from Institute of Machematical Statistics (IMS). </li>
-    <li><span class="news-date">February 2025:</span>I presented our work <a href="https://www.arxiv.org/abs/2411.01100">"Transfer Learning Between U.S. Presidential Elections"</a> at <a href="https://sites.google.com/view/meadwisc/home">MEAD</a>.</li>
-    <li><span class="news-date">January 2025:</span>Our work <a href="https://www.arxiv.org/abs/2411.01100">"Transfer Learning Between U.S. Presidential Elections"</a> received ASA Student Paper Award from the SLDS session. I will present this work at JSM 2025.</li>
-    <li><span class="news-date">June 2024:</span>I'm honored to receive the teaching award from our department. [<a href="https://stat.wisc.edu/2024/06/18/department-of-statistics-honors-outstanding-teaching-assistants-for-2023-2024/">Department News</a>]</li>
+    <li><span class="news-date">August 2025:</span>I will be presenting our work on <a href="https://www.arxiv.org/abs/2411.01100">transfer learning between U.S. presidential elections</a> at JSM 2025 (August 5, 2PM).</li>
+    <li><span class="news-date">June 2025:</span>I presented our work on <a href="https://www.arxiv.org/abs/2411.01100">transfer learning between U.S. presidential elections</a> at NESS (<a href="/docs/talks/20250602_transATE_slides.pdf">15-min slides</a>). This work also received the NESS Student Research Award.</li>
+    <li><span class="news-date">May 2025:</span>I passed the preliminary exam and became a PhD candidate. Many thanks to my advisor Prof. Hyunseung Kang, as well as Prof. Guanhua Chen, Prof. Melody Huang, Prof. Edward Kennedy and Prof. Qingyuan Zhao who kindly served in my committe and provided valuable feedback!</li>
+    <li><span class="news-date">May 2025:</span>I presented our ongoing work on <a href="/docs/20250516_SLOPE_ACIC.pdf">SLOPE and its role in design for generalization</a> at ACIC.</li>
+    <li><span class="news-date">April 2025:</span>I'm delighted to receive Summer Research Fellowship from our department and IMS Hannan Graduate Student Travel Award from Institute of Machematical Statistics (IMS). </li>
+    <li><span class="news-date">February 2025:</span>I presented our work on <a href="https://www.arxiv.org/abs/2411.01100">transfer learning between U.S. presidential election"</a> at <a href="https://sites.google.com/view/meadwisc/home">MEAD</a> (UW-Madison political science department seminar).</li>
+    <li><span class="news-date">January 2025:</span>Our paper <a href="https://www.arxiv.org/abs/2411.01100">"Transfer Learning Between U.S. Presidential Elections: How Should We Learn From A 2020 Ad Campaign To Inform 2024 Ad Campaigns?"</a> received ASA Student Paper Award from the SLDS section. </li>
+    <li><span class="news-date">June 2024:</span>I'm honored to receive the teaching award from our department for the 2023-2024 academic year. Many thanks to my students and the instructors that I worked with during the two semesters: Prof. Yinqiu He, Prof. Chris Geoga, Prof. Sameer Deshpande. [<a href="https://stat.wisc.edu/2024/06/18/department-of-statistics-honors-outstanding-teaching-assistants-for-2023-2024/">Department News</a>]</li>
   </ul>
+</div>		 
 </div>
-			 <h2>Education</h2>
+
+<div class="column middle">
+			<p></p>
+</div>
+<div class="column right">
+            {% include image.html url="/images/xinranmiao_202309.jpg" caption="September 2, 2023 at Madison, WI." width=1000 align="center" %}
+</div>
+</div>
+
+<!---
+Education
+-->
+        
+<h2>Education</h2>
+        <!--
                  <p> Ph.D. in Statistics, University of Wisconsin-Madison, (Expected) 2026</p>
 			     <p> M.S. in Statistics, University of Wisconsin-Madison, 2021</p>
 			     <p> B.S. in Statistics, Nankai University, 2020</p>
-		    <h2>Teaching Experience</h2>
-		        <p>Teaching Assistant at UW-Madison</p>
-		            <ul>
-                    <li>STAT 775: Bayesian Statistics. Spring 2024 (Grader)</li>
-		            <li>STAT 575: Statistical Methods for Spatial Data. Spring 2024</li>
-                    <li>STAT 849: Theory and Application of Regression and Analysis of Variance I. Fall 2023</li>
-			        <li>STAT 301: Introduction to Statistics. Fall 2021, Spring 2022, Summer 2024</li>
-		            </ul>
-            <h2>Honors and Awards</h2>
+        -->
+                 <div class="education-entry">
+    <div class="education-info">
+    Ph.D. in Statistics, University of Wisconsin–Madison
+    </div>
+    <div class="education-year">(Expected) 2026</div>
+    </div>
+
+    <div class="education-entry">
+    <div class="education-info">
+    M.S. in Statistics, University of Wisconsin–Madison
+    </div>
+    <div class="education-year">2021</div>
+    </div>
+
+    <div class="education-entry">
+    <div class="education-info">
+    B.S. in Statistics, Nankai University
+    </div>
+    <div class="education-year">2020</div>
+    </div>
+
+
+<!---
+Teaching
+-->
+<h2>Teaching Experience</h2>
+<p>Teaching Assistant at UW–Madison</p>
+
+    <div class="teaching-entry">
+     <div class="course-info">
+    <div class="course-title">STAT 301: Introduction to Statistics</div>
+    <div class="course-description">Introductory course for undergraduate students with a non-statistics major.</div>
+     </div> <div class="term">Fall 2021, Spring 2022, Summer 2024</div>
+    </div>
+
+    <div class="teaching-entry">
+    <div class="course-info">
+    <div class="course-title">STAT 849: Theory and Application of Regression and ANOVA I</div>
+    <div class="course-description">Core course for MS/PhD students.</div>
+    </div>
+    <div class="term">Fall 2023</div>
+    </div>
+
+
+    <div class="teaching-entry">
+  <div class="course-info">
+    <div class="course-title">STAT 575: Statistical Methods for Spatial Data</div>
+    <div class="course-description">Elective course for undergraduate/graduate students.</div>
+  </div>
+  <div class="term">Spring 2024</div>
+    </div><div class="teaching-entry">
+    <div class="course-info">
+    <div class="course-title">STAT 775: Bayesian Statistics (Grader)</div>
+    <div class="course-description">Elective course for graduate students.</div>
+    </div>
+    <div class="term">Spring 2024</div>
+    </div>
+		        
+<h2>Honors and Awards</h2>
+<div class="award-entry">
+  <div class="award-info">
+    <div class="award-name">NESS Student Research Award</div>
+    <div class="award-description">Awarded by New England Statistics Symposium (NESS)</div>
+  </div>
+  <div class="award-year">2025</div>
+</div>
+
+<div class="award-entry">
+  <div class="award-info">
+    <div class="award-name">IMS Hannan Graduate Student Travel Award</div>
+    <div class="award-description">Awarded by Institute of Mathematical Statistics (IMS)</div>
+  </div>
+  <div class="award-year">2025</div>
+</div>
+
+<div class="award-entry">
+  <div class="award-info">
+    <div class="award-name">Summer Research Fellowship</div>
+    <div class="award-description">Awarded by Department of Statistics, University of Wisconsin–Madison</div>
+  </div>
+  <div class="award-year">2025</div>
+</div>
+
+<div class="award-entry">
+  <div class="award-info">
+    <div class="award-name">
+      ASA Best Student Paper Award
+    </div>
+    <div class="award-description">
+      Awarded by Statistical Learning and Data Science (SLDS) Section, American Statistical Association
+      [<a href="https://community.amstat.org/slds/awards/student-paper-award">ASA Announcement</a>]
+    </div>
+  </div>
+  <div class="award-year">2025</div>
+</div>
+
+<div class="award-entry">
+  <div class="award-info">
+    <div class="award-name">Outstanding Performance as a Teaching Assistant for Graduate Courses</div>
+    <div class="award-description">
+      Awarded by Department of Statistics, University of Wisconsin–Madison
+      [<a href="https://stat.wisc.edu/2024/06/18/department-of-statistics-honors-outstanding-teaching-assistants-for-2023-2024/">Department News</a>]
+    </div>
+  </div>
+  <div class="award-year">2023–2024</div>
+</div>
+
+<div class="award-entry">
+  <div class="award-info">
+    <div class="award-name">SCI Travel Scholarship</div>
+    <div class="award-description">Awarded by Society for Causal Inference (SCI)</div>
+  </div>
+  <div class="award-year">2024</div>
+</div>
+            <!---
                     <ul>
+                        <li>NESS Student Research Award, awarded by New England Statistics Symposium (NESS), 2025 </li>
                         <li>IMS Hannan Graduate Student Travel Award, awarded by Institute of Mathematical Statistics (IMS), 2025 </li>
                         <li>Summer Research Fellowship, awarded by Department of Statistics, University of Wisconsin-Madison, 2025 </li>                        
-                        <li>Best Student Paper Award, awarded by  Statistical Learning and Data Science (SLDS) Section, American Statistical Associations, 2025 [<a href="https://community.amstat.org/slds/awards/student-paper-award">ASA Announcement</a>]</li>
+                        <li>ASA Best Student Paper Award, awarded by  Statistical Learning and Data Science (SLDS) Section, American Statistical Associations, 2025 [<a href="https://community.amstat.org/slds/awards/student-paper-award">ASA Announcement</a>]</li>
                         <li>Outstanding Performance as a Teaching Assistant for Graduate Courses, awarded by Department of Statistics, University of Wisconsin-Madison, 2023-2024 [<a href="https://stat.wisc.edu/2024/06/18/department-of-statistics-honors-outstanding-teaching-assistants-for-2023-2024/">Department News</a>]</li>
-                        <li>SCI Travel Scholarship, awarded by Socienty for Causal Inference (SCI), 2024</li>                    </ul>	
-            <h2>Contact</h2>
-            <p>Email: xinran (dot) miao (at) wisc (dot) edu</p>
-            <p>Office: 1335O Medical Sciences Center, Madison, WI, 53706</p>
-        </div>
-		<div class="column middle">
-			<p></p>
-		</div>
-        <div class="column right">
-            {% include image.html url="/images/xinranmiao_202309.jpg" caption="September 2, 2023 at Madison, WI." width=1000 align="center" %}
-			<ul class="contact-list">
-                <!---
-				<li>Xinran Miao</li>
-                <li>xinran dot miao at wisc dot edu</li>
-                <li>1335O Medical Sciences Center</li>
-                <li>Madison, WI</li>
-				<li> <a href="https://stat.wisc.edu">Department of Statistics</a></li>
-				<li><a href="https://www.wisc.edu">UW-Madison</a></li>
-				<li><a href="mailto:{{ xinran.miao@wisc.edu}}">xinran dot miao at wisc dot edu</a></li>
-				<li><a href="https://github.com/{{ site.github_username }}">
-					<i class="fa fa-github" style="color:gray"></i> Github</li>
-				<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-					<i class="fa fa-linkedin" style="color:gray"></i> Linkedin</a></li>
-                    li><a href="https://scholar.google.com/citations?user={{ site.google_scholar_id}}">
-                        <i class="fa fa-googlescholar" style="color:gray"></i>Google Scholar</a></li>
-                 -->
-			  </ul>
-        </div>
+                        <li>SCI Travel Scholarship, awarded by Society for Causal Inference (SCI), 2024</li>                   
+                     </ul>	
+            -->
+    
+                    
+    <h2>Contact</h2>
+    <p>Email: xinran (dot) miao (at) wisc (dot) edu</p>
+    <p>Office: 1335O Medical Sciences Center, Madison, WI, 53706</p>
     </div>
  </body>
