@@ -17,3 +17,7 @@
 - title: "Blog"
   href: "/blog/"
   active: blog
+
+- title: "Miscellaneous"
+  href: "/miscellaneous/"
+  active: miscellaneous
