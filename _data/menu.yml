@@ -18,6 +18,6 @@
   href: "/blog/"
   active: blog
 
-- title: "Miscellaneous"
-  href: "/miscellaneous/"
-  active: miscellaneous
+#- title: "Miscellaneous"
+#  href: "/miscellaneous/"
+#  active: miscellaneous
