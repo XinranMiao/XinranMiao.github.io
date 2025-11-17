@@ -1,15 +1,87 @@
 ---
 layout: default
 ---
+<head>
+    <style>
+    {
+        box-sizing: border-box;
+    }
 
+    h2 {
+    font-weight: 700;
+    font-size: 1.6em;
+    letter-spacing: 0.5px;
+    
+    }
+
+    /* Set additional styling options for the columns*/
+    .column {
+    float: left;
+    }
+    
+	.left {
+    width: 70%;
+    }
+	.middle {
+    width: 5%;
+    }
+    .right {
+    width: 25%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+/* News ==================== */
+    .news-container {
+     border: 1px solid #ccc;
+     border-radius: 8px;
+    padding: 10px;
+    height: 160px;
+    overflow-y: auto; /* Manual scroll */
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    }
+
+    .news-list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 2px;
+    }
+
+    .news-list li {
+    margin-bottom: 12px;
+    }
+
+    .news-date {
+    font-weight: bold;
+    margin-right: 8px;
+    }
+
+    .news-container h2 {
+    margin-bottom: 2px;  /* or 0px for no gap at all */
+    }
+
+    .news-divider {
+    height: 1px;
+    background-color: #ccc;
+    margin: -13px 0 8px 0;
+    }
+
+
+
+</style>
+ </head>
 
 
 <div class="home">
 	<!--- talks -->
 	
 <!--- <h2>Publications and Preprints</h2> -->
-<h2>Research</h2>
-<p>Convention: * for co-first authors.</p>
+<h2>Papers</h2>
+<p>Convention: * for equal contributions.</p>
 
 <!--- <b>Under review or revision</b> -->
 <ol reversed>
