@@ -8,9 +8,9 @@
   href: "/research/"
   active: research
 
-#- title: "Teaching"
-#  href: "/teaching/"
- # active: teaching
+- title: "Teaching"
+  href: "/teaching/"
+  active: teaching
 
 
 
