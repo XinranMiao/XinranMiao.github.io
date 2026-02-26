@@ -1,0 +1,260 @@
+---
+layout: default
+---
+<head>
+    <style>
+		 body {
+    font-size: 20px;   /* try 18px or 1.1em */
+    font-family: sans-serif;  /* optional, for consistency */
+}
+    {
+        box-sizing: border-box;
+    }
+
+    h2 {
+    font-weight: 700;
+    font-size: 1.6em;
+    letter-spacing: 0.5px;
+    
+    }
+
+    /* Set additional styling options for the columns*/
+    .column {
+    float: left;
+    }
+    
+	.left {
+    width: 98%;
+    }
+	.middle {
+    width: 1%;
+    }
+    .right {
+    width: 1%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+/* News ==================== */
+    .news-container {
+     border: 1px solid #ccc;
+     border-radius: 8px;
+    padding: 10px;
+    height: 160px;
+    overflow-y: auto; /* Manual scroll */
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    }
+
+    .news-list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 2px;
+    }
+
+    .news-list li {
+    margin-bottom: 12px;
+    }
+
+    .news-date {
+    font-weight: bold;
+    margin-right: 8px;
+    }
+
+    .news-container h2 {
+    margin-bottom: 2px;  /* or 0px for no gap at all */
+    }
+
+    .news-divider {
+    height: 1px;
+    background-color: #ccc;
+    margin: -13px 0 8px 0;
+    }
+
+/* Research */
+    .education-entry {
+    display: grid;
+    grid-template-columns: 800px 1fr; /* first column: school & degree */
+    gap: 20px;
+    margin-bottom: 14px;
+    font-family: sans-serif;
+    }
+
+    .education-info {
+    font-weight: 500;
+    color: #000;
+    }
+
+    .education-year {
+    font-weight: 500;
+    }
+
+
+    /* Teaching list  */
+    .subtitle {
+    font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.teaching-entry {
+  display: grid;
+  grid-template-columns: 500px 1fr; /* course title column is now 300px wide */
+  gap: 20px;
+  margin-bottom: 18px;
+  font-family: sans-serif;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-title {
+  font-weight: 500;
+  color: #000;
+}
+
+.course-description {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.term {
+  font-weight: 500;
+}
+
+
+/* Award  */
+.award-entry {
+  display: grid;
+  grid-template-columns: 800px 1fr; /* adjust the width as needed */
+  gap: 20px;
+  margin-bottom: 16px;
+  font-family: sans-serif;
+}
+
+.award-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.award-name {
+  font-weight: 500;
+  color: #000;
+}
+
+.award-description {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.award-year {
+  font-weight: 500;
+}
+
+</style>
+ </head>
+
+
+<div class="home">
+	<!--- talks -->
+	
+<h2>Education</h2>
+        <!--
+                 <p> Ph.D. in Statistics, University of Wisconsin-Madison, (Expected) 2026</p>
+			     <p> M.S. in Statistics, University of Wisconsin-Madison, 2021</p>
+			     <p> B.S. in Statistics, Nankai University, 2020</p>
+        -->
+                 <div class="education-entry">
+    <div class="education-info">
+    Ph.D. in Statistics, University of Wisconsin–Madison
+    </div>
+    <div class="education-year">(Expected) 2026</div>
+    </div>
+
+    <div class="education-entry">
+    <div class="education-info">
+    M.S. in Statistics, University of Wisconsin–Madison
+    </div>
+    <div class="education-year">2021</div>
+    </div>
+
+    <div class="education-entry">
+    <div class="education-info">
+    B.S. in Statistics, Nankai University
+    </div>
+    <div class="education-year">2020</div>
+    </div>
+
+<h2>Honors and Awards</h2>
+<div class="award-entry">
+  <div class="award-info">
+    <div class="award-name">
+      ASA Best Student Paper Award (Statistical Learning and Data Science)
+    </div>
+    <div class="award-description">
+      Awarded by Statistical Learning and Data Science (SLDS) Section, American Statistical Association
+      [<a href="https://community.amstat.org/slds/awards/student-paper-award">ASA Announcement</a>]
+    </div>
+  </div>
+  <div class="award-year">2025</div>
+</div>
+
+<div class="award-entry">
+  <div class="award-info">
+    <div class="award-name">IMS Hannan Graduate Student Travel Award</div>
+    <div class="award-description">Awarded by Institute of Mathematical Statistics (IMS)</div>
+  </div>
+  <div class="award-year">2025</div>
+</div>
+
+<div class="award-entry">
+  <div class="award-info">
+    <div class="award-name">NESS Student Research Award</div>
+    <div class="award-description">Awarded by New England Statistics Symposium (NESS)</div>
+  </div>
+  <div class="award-year">2025</div>
+</div>
+
+
+
+<div class="award-entry">
+  <div class="award-info">
+    <div class="award-name">Morgridge Summer Research Fellowship</div>
+    <div class="award-description">Awarded by Department of Statistics, University of Wisconsin–Madison</div>
+  </div>
+  <div class="award-year">2025</div>
+</div>
+
+
+
+<div class="award-entry">
+  <div class="award-info">
+    <div class="award-name">Outstanding Performance as a Teaching Assistant for Graduate Courses</div>
+    <div class="award-description">
+      Awarded by Department of Statistics, University of Wisconsin–Madison
+      [<a href="https://stat.wisc.edu/2024/06/18/department-of-statistics-honors-outstanding-teaching-assistants-for-2023-2024/">Department News</a>]
+    </div>
+  </div>
+  <div class="award-year">2023–2024</div>
+</div>
+
+<div class="award-entry">
+  <div class="award-info">
+    <div class="award-name">SCI Travel Scholarship</div>
+    <div class="award-description">Awarded by Society for Causal Inference (SCI)</div>
+  </div>
+  <div class="award-year">2024</div>
+</div>
+</div>
+
+
+</div>
