@@ -17,6 +17,12 @@ layout: default
     font-weight: 700;
     font-size: 1.6em;
     letter-spacing: 0.5px;
+    }
+    
+    h3 {
+    font-weight: 500;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
     
     }
 
@@ -62,7 +68,7 @@ layout: default
     }
 
     .news-date {
-    font-weight: bold;
+    font-weight: 500;
     margin-right: 8px;
     }
 
@@ -76,92 +82,17 @@ layout: default
     margin: -13px 0 8px 0;
     }
 
-/* Research */
-    .education-entry {
-    display: grid;
-    grid-template-columns: 500px 1fr; /* first column: school & degree */
-    gap: 20px;
-    margin-bottom: 14px;
-    font-family: sans-serif;
-    }
-
-    .education-info {
+.section-title {
     font-weight: 500;
-    color: #000;
-    }
-
-    .education-year {
-    font-weight: 500;
-    }
-
-
-    /* Teaching list  */
-    .subtitle {
-    font-style: italic;
-  color: #666;
-  margin-bottom: 20px;
+    font-size: 1.2em;
+    letter-spacing: 0.6px;
 }
 
-.teaching-entry {
-  display: grid;
-  grid-template-columns: 500px 1fr; /* course title column is now 300px wide */
-  gap: 20px;
-  margin-bottom: 18px;
-  font-family: sans-serif;
+.section-link {
+    font-size: 0.8em;
+    color: #777;
+    font-weight: normal;
 }
-
-.course-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.course-title {
-  font-weight: 500;
-  color: #000;
-}
-
-.course-description {
-  font-size: 0.9em;
-  color: #777;
-  margin-top: 4px;
-  font-style: italic;
-}
-
-.term {
-  font-weight: 500;
-}
-
-
-/* Award  */
-.award-entry {
-  display: grid;
-  grid-template-columns: 500px 1fr; /* adjust the width as needed */
-  gap: 20px;
-  margin-bottom: 16px;
-  font-family: sans-serif;
-}
-
-.award-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.award-name {
-  font-weight: 500;
-  color: #000;
-}
-
-.award-description {
-  font-size: 0.9em;
-  color: #777;
-  margin-top: 4px;
-  font-style: italic;
-}
-
-.award-year {
-  font-weight: 500;
-}
-
 </style>
  </head>
  <body>
@@ -170,8 +101,11 @@ layout: default
 	             <p>I'm a fifth-year Ph.D. student in Statistics at the <a href="https://www.wisc.edu">University of Wisconsin-Madison</a>. My advisor is
                  Professor <a href="https://pages.cs.wisc.edu/~hyunseung/">Hyunseung Kang</a>. 
                  Prior to coming to Madison, I received B.S. in Statistics from the <a href="http://en.math.nankai.edu.cn">School of Mathematical Sciences</a> at <a href="https://en.nankai.edu.cn">Nankai University</a> in China.
+                 Please find my <a href="docs/xinranmiao_cv.pdf">CV</a> through the link.
                 </p>
-                <p>My research interests include transportability/generalizability, sensitivity analysis, causal inference, and robust statistics. [<a href = "https://xinranmiao.github.io/research/">Research page</a>] [<a href = "https://scholar.google.com/citations?user=5vHFhx8AAAAJ&hl=en">Google Scholar</a>]</p>
+                <p>My research interests include transportability/generalizability, sensitivity analysis, causal inference, and robust statistics. 
+                  <!--[<a href = "https://xinranmiao.github.io/research/">Research page</a>] [<a href = "https://scholar.google.com/citations?user=5vHFhx8AAAAJ&hl=en">Google Scholar</a>]</p>
+                  --->
                 
                 
                
@@ -183,24 +117,39 @@ layout: default
                 -->
         <!--- <h2>News</h2> --->
 <p></p>
+<div>
+  <h2 class="section-title">
+  Representative Works 
+  <span class="section-link">
+    (see full list from my <a href="https://xinranmiao.github.io/research/">Research Page</a> or <a href="https://scholar.google.com/citations?user=5vHFhx8AAAAJ&hl=en">Google Scholar</a>)
+  </span>
+</h2>
+  <p><a href="https://www.arxiv.org/abs/2510.01577">SLOPE and designing robust studies for generalization.</a> <i>Under Review.</i><br>
+<u>Miao, X.</u>, Zhao, J., Kang, H. (2025+).</p>
+
+<p><a href="https://www.arxiv.org/abs/2411.01100">Transfer learning between U.S. presidential elections: how should we learn from a 2020 ad campaign to inform 2024 ad campaigns?.</a> <i>Under Revision.</i><br>
+<u>Miao, X.</u>, Zhao, J., Kang, H. (2025+). </p>
+
+</div>
+  <!--
 <div class="news-container">
     <h3>Recent News</h3>
     <div class="news-divider"></div>
   <ul class="news-list">
-    <li><span class="news-date">October 2025:</span>Our work on <a href="https://www.arxiv.org/abs/2510.01577">SLOPE and Designing Robust Studies for Generalization</a> is now on arXiv!</li>
-    <li><span class="news-date">June 2025:</span>Our work on <a href="https://www.arxiv.org/abs/2411.01100">transfer learning between U.S. presidential elections</a> received the NESS Student Research Award.</li>
-    <li><span class="news-date">January 2025:</span>Our work on <a href="https://www.arxiv.org/abs/2411.01100">"transfer learning between U.S. presidential elections"</a> received ASA Student Paper Award from the SLDS section. </li>
-    <!--
+    <li><span class="news-date">2025-10:</span>Our work on <a href="https://www.arxiv.org/abs/2510.01577">SLOPE and Designing Robust Studies for Generalization</a> is now on arXiv!</li>
+    <li><span class="news-date">2025-06:</span>Our work on <a href="https://www.arxiv.org/abs/2411.01100">transfer learning between U.S. presidential elections</a> received the NESS Student Research Award.</li>
+    <li><span class="news-date">2025-01:</span>Our work on <a href="https://www.arxiv.org/abs/2411.01100">"transfer learning between U.S. presidential elections"</a> received ASA Student Paper Award from the SLDS section. </li>
+  
     <li><span class="news-date">August 2025:</span>I presented our work on <a href="https://www.arxiv.org/abs/2411.01100">transfer learning between U.S. presidential elections</a> at JSM 2025.</li>
     <li><span class="news-date">May 2025:</span>I passed the preliminary exam and became a PhD candidate. Many thanks to my advisor Prof. Hyunseung Kang, as well as Prof. Guanhua Chen, Prof. Melody Huang, Prof. Edward Kennedy and Prof. Qingyuan Zhao who kindly served in my committe and provided valuable feedback!</li>
     <li><span class="news-date">May 2025:</span>I presented our work on <a href="https://www.arxiv.org/abs/2510.01577">SLOPE and its role in design for generalization</a> at ACIC.</li>
     <li><span class="news-date">April 2025:</span>I'm delighted to receive Summer Research Fellowship from our department and IMS Hannan Graduate Student Travel Award from Institute of Machematical Statistics (IMS). </li>
     <li><span class="news-date">February 2025:</span>I presented our work on <a href="https://www.arxiv.org/abs/2411.01100">transfer learning between U.S. presidential election"</a> at <a href="https://sites.google.com/view/meadwisc/home">MEAD</a> (UW-Madison political science department seminar).</li>
     <li><span class="news-date">June 2024:</span>I'm honored to receive the teaching award from our department for the 2023-2024 academic year. [<a href="https://stat.wisc.edu/2024/06/18/department-of-statistics-honors-outstanding-teaching-assistants-for-2023-2024/">Department News</a>]</li>
-    -->
+    
   </ul>
 </div>	
-
+-->
 
 <!---
 Education
