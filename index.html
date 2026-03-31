@@ -6,24 +6,19 @@ layout: default
 <head>
     <style>
     body {
-    font-size: 18px;   /* try 18px or 1.1em */
-    font-family: sans-serif;  /* optional, for consistency */
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #222;
+    line-height: 1.7;
 }
     {
         box-sizing: border-box;
     }
 
-    h2 {
-    font-weight: 700;
-    font-size: 1.6em;
-    letter-spacing: 0.5px;
-    }
-    
     h3 {
     font-weight: 500;
-    font-size: 1.1em;
-    letter-spacing: 0.5px;
-    
+    font-size: 1.05em;
     }
 
     /* Set additional styling options for the columns*/
@@ -47,58 +42,96 @@ layout: default
     clear: both;
     }
 /* News ==================== */
-    .news-container {
-     border: 1px solid #ccc;
-     border-radius: 8px;
-    padding: 10px;
-    height: 240px;
-    overflow-y: auto; /* Manual scroll */
-    background-color: #f9f9f9;
-    margin-bottom: 10px;
-    }
-
     .news-list {
     list-style-type: none;
     margin: 0;
-    padding-left: 2px;
+    padding-left: 0;
     }
 
     .news-list li {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: baseline;
+    gap: 0.7em;
     }
 
     .news-date {
+    flex-shrink: 0;
+    font-size: 0.78em;
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    color: #555;
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    }
+
+/* Preprints ==================== */
+    .paper-title {
     font-weight: 500;
-    margin-right: 8px;
     }
 
-    .news-container h2 {
-    margin-bottom: 2px;  /* or 0px for no gap at all */
+    .paper-status {
+    font-size: 0.8em;
+    color: #888;
+    background: #f4f4f4;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-weight: 400;
+    margin-left: 4px;
     }
 
-    .news-divider {
-    height: 1px;
-    background-color: #ccc;
-    margin: -13px 0 8px 0;
+    .paper-authors {
+    color: #666;
+    font-size: 0.92em;
     }
 
 .section-title {
+    font-size: 1.05em;
     font-weight: 500;
-    font-size: 1.2em;
-    letter-spacing: 0.6px;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 0.9em;
 }
 
 .section-link {
     font-size: 0.8em;
-    color: #777;
-    font-weight: normal;
+    color: #999;
+    font-weight: 400;
+}
+
+.muted-link {
+    color: #999;
+    text-decoration: none;
+}
+
+.muted-link:hover {
+    text-decoration: underline;
+}
+
+.news-list li > span:last-child {
+    font-size: 0.9em;
+}
+
+p {
+    margin-bottom: 1.4em;
+}
+
+hr.section-rule {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2em 0 1.2em 0;
+}
+
+.paper-entry {
+    margin-bottom: 1.5em;
 }
 </style>
  </head>
  <body>
     <div class="row">
         <div class="column left">
-	             <p>I'm a fifth-year Ph.D. student in Statistics at the <a href="https://www.wisc.edu">University of Wisconsin-Madison</a>. My advisor is
+	             <p>I am a fifth-year Ph.D. student in Statistics at the <a href="https://www.wisc.edu">University of Wisconsin-Madison</a>. My advisor is
                  Professor <a href="https://pages.cs.wisc.edu/~hyunseung/">Hyunseung Kang</a>. 
                  Prior to coming to Madison, I received B.S. in Statistics from the School of Mathematical Sciences at Nankai University in China.
                  View my <a href="docs/xinranmiao_cv.pdf">CV</a>.
@@ -109,49 +142,44 @@ layout: default
                 
                 
                
-                <p>The best way to reach me is through email (xinran.miao@wisc.edu).</p>
                <!--- <p><a href="/docs/xinranmiao_cv.pdf">[CV]</a></p>
                 -->
             <!---
                 <p><a href="https://scholar.google.com/citations?user=5vHFhx8AAAAJ&hl=en">[Google Scholar]</a></p>
                 -->
-        <!--- <h2>News</h2> --->
-<p></p>
-<div>
-</div>
+<hr class="section-rule">
 <div>
   <h2 class="section-title">
-  Representative Works 
+    Recent News
+    <span class="section-link">
+      (see full list on the <a class="muted-link" href="/news">archived news page</a>)
+    </span>
+  </h2>
+  <ul class="news-list">
+   
+    <li><span class="news-date">2026-04</span><span>I am presenting our <a href="https://www.arxiv.org/abs/2510.01577">SLOPE</a> paper as a poster at EuroCIM.</span></li>
+     <li><span class="news-date">2026-03</span><span>I am visiting the Isaac Newton Institute for Mathematical Sciences at the University of Cambridge.</span></li>
+    
+</ul>
+</div>
+
+<hr class="section-rule">
+<div>
+  <h2 class="section-title">
+  Representative Works
   <span class="section-link">
     (see full list from my <a href="https://xinranmiao.github.io/research/">Research Page</a> or <a href="https://scholar.google.com/citations?user=5vHFhx8AAAAJ&hl=en">Google Scholar</a>)
   </span>
 </h2>
-  <p><a href="https://www.arxiv.org/abs/2510.01577">SLOPE and designing robust studies for generalization.</a> <i>Under Review.</i><br>
-<u>Miao, X.</u>, Zhao, J., Kang, H. (2025+).</p>
-
-<p><a href="https://www.arxiv.org/abs/2411.01100">Transfer learning between U.S. presidential elections: how should we learn from a 2020 ad campaign to inform 2024 ad campaigns?.</a> <i>Under Revision.</i><br>
-<u>Miao, X.</u>, Zhao, J., Kang, H. (2025+). </p>
-
+  <div class="paper-entry">
+    <div><a class="paper-title" href="https://www.arxiv.org/abs/2510.01577">SLOPE and designing robust studies for generalization.</a><span class="paper-status">Under Review</span></div>
+    <div class="paper-authors"><u>Miao, X.</u>, Zhao, J., Kang, H. (2025+)</div>
+  </div>
+  <div class="paper-entry">
+    <div><a class="paper-title" href="https://www.arxiv.org/abs/2411.01100">Transfer learning between U.S. presidential elections: how should we learn from a 2020 ad campaign to inform 2024 ad campaigns?</a><span class="paper-status">Under Revision</span></div>
+    <div class="paper-authors"><u>Miao, X.</u>, Zhao, J., Kang, H. (2025+)</div>
+  </div>
 </div>
-  <!--
-<div class="news-container">
-    <h3>Recent News</h3>
-    <div class="news-divider"></div>
-  <ul class="news-list">
-    <li><span class="news-date">2025-10:</span>Our work on <a href="https://www.arxiv.org/abs/2510.01577">SLOPE and Designing Robust Studies for Generalization</a> is now on arXiv!</li>
-    <li><span class="news-date">2025-06:</span>Our work on <a href="https://www.arxiv.org/abs/2411.01100">transfer learning between U.S. presidential elections</a> received the NESS Student Research Award.</li>
-    <li><span class="news-date">2025-01:</span>Our work on <a href="https://www.arxiv.org/abs/2411.01100">"transfer learning between U.S. presidential elections"</a> received ASA Student Paper Award from the SLDS section. </li>
-  
-    <li><span class="news-date">August 2025:</span>I presented our work on <a href="https://www.arxiv.org/abs/2411.01100">transfer learning between U.S. presidential elections</a> at JSM 2025.</li>
-    <li><span class="news-date">May 2025:</span>I passed the preliminary exam and became a PhD candidate. Many thanks to my advisor Prof. Hyunseung Kang, as well as Prof. Guanhua Chen, Prof. Melody Huang, Prof. Edward Kennedy and Prof. Qingyuan Zhao who kindly served in my committe and provided valuable feedback!</li>
-    <li><span class="news-date">May 2025:</span>I presented our work on <a href="https://www.arxiv.org/abs/2510.01577">SLOPE and its role in design for generalization</a> at ACIC.</li>
-    <li><span class="news-date">April 2025:</span>I'm delighted to receive Summer Research Fellowship from our department and IMS Hannan Graduate Student Travel Award from Institute of Machematical Statistics (IMS). </li>
-    <li><span class="news-date">February 2025:</span>I presented our work on <a href="https://www.arxiv.org/abs/2411.01100">transfer learning between U.S. presidential election"</a> at <a href="https://sites.google.com/view/meadwisc/home">MEAD</a> (UW-Madison political science department seminar).</li>
-    <li><span class="news-date">June 2024:</span>I'm honored to receive the teaching award from our department for the 2023-2024 academic year. [<a href="https://stat.wisc.edu/2024/06/18/department-of-statistics-honors-outstanding-teaching-assistants-for-2023-2024/">Department News</a>]</li>
-    
-  </ul>
-</div>	
--->
 
 <!---
 Education
@@ -183,7 +211,13 @@ Teaching
 			<p></p>
 </div>
 <div class="column right">
-            {% include image.html url="/images/xinranmiao_202309.jpg" caption="September 2023" width=800 align="center" %}
+    <img src="/images/xinranmiao_202309.jpg" alt="Xinran Miao" style="width: 100%; display: block;" />
+    <div style="margin-top: 0.9em; text-align: center; font-family: 'Open Sans', sans-serif;">
+        <div style="font-size: 1em; font-weight: 600; color: #222; margin-bottom: 0.15em;">Xinran Miao</div>
+        <div style="font-size: 0.82em; color: #555; margin-bottom: 0.1em;">Ph.D. Student in Statistics</div>
+        <div style="font-size: 0.82em; color: #555; margin-bottom: 0.5em;">University of Wisconsin–Madison</div>
+        <div style="font-size: 0.8em; color: #888;">xinran.miao@wisc.edu</div>
+    </div>
 </div>
  </body>
 
